@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="155" id="KGk-i7-Jjw" customClass="UserListTableViewCell" customModule="NikhilShindeAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="285" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="285" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gj-4e-nfK">
+                        <rect key="frame" x="8" y="8" width="269" height="139"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EPS-ft-r5f">
+                                <rect key="frame" x="16" y="16" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MA6-Iw-S4y"/>
+                                    <constraint firstAttribute="width" constant="40" id="dGP-lz-MI7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Snm-ga-7LY">
+                                <rect key="frame" x="72" y="16" width="181" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sgh-UW-qkP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CN-5N-m8X">
+                                <rect key="frame" x="72" y="39" width="181" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="vEj-tZ-ET2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ber-TQ-xaG">
+                                <rect key="frame" x="8" y="68" width="253" height="63"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EPS-ft-r5f" firstAttribute="top" secondItem="3gj-4e-nfK" secondAttribute="top" constant="16" id="Gfg-8z-XGr"/>
+                            <constraint firstItem="ber-TQ-xaG" firstAttribute="leading" secondItem="3gj-4e-nfK" secondAttribute="leading" constant="8" id="IjP-LF-qnV"/>
+                            <constraint firstAttribute="trailing" secondItem="Snm-ga-7LY" secondAttribute="trailing" constant="16" id="Jb6-lb-17T"/>
+                            <constraint firstAttribute="trailing" secondItem="0CN-5N-m8X" secondAttribute="trailing" constant="16" id="Pui-pl-v0c"/>
+                            <constraint firstAttribute="trailing" secondItem="ber-TQ-xaG" secondAttribute="trailing" constant="8" id="SCm-SZ-2ue"/>
+                            <constraint firstItem="EPS-ft-r5f" firstAttribute="leading" secondItem="3gj-4e-nfK" secondAttribute="leading" constant="16" id="ZXo-2o-hIN"/>
+                            <constraint firstItem="0CN-5N-m8X" firstAttribute="top" secondItem="Snm-ga-7LY" secondAttribute="bottom" constant="2" id="gFQ-5t-6bO"/>
+                            <constraint firstItem="Snm-ga-7LY" firstAttribute="leading" secondItem="EPS-ft-r5f" secondAttribute="trailing" constant="16" id="hpP-zt-r5G"/>
+                            <constraint firstItem="Snm-ga-7LY" firstAttribute="top" secondItem="3gj-4e-nfK" secondAttribute="top" constant="16" id="kRJ-ZA-vhr"/>
+                            <constraint firstItem="ber-TQ-xaG" firstAttribute="top" secondItem="0CN-5N-m8X" secondAttribute="bottom" constant="8" id="kdO-7L-JQb"/>
+                            <constraint firstItem="0CN-5N-m8X" firstAttribute="leading" secondItem="EPS-ft-r5f" secondAttribute="trailing" constant="16" id="mtY-IJ-eYy"/>
+                            <constraint firstAttribute="bottom" secondItem="ber-TQ-xaG" secondAttribute="bottom" constant="8" id="zbf-xe-7cW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3gj-4e-nfK" secondAttribute="bottom" constant="8" id="MYW-eS-YOp"/>
+                    <constraint firstItem="3gj-4e-nfK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="OaG-4k-yXM"/>
+                    <constraint firstAttribute="trailing" secondItem="3gj-4e-nfK" secondAttribute="trailing" constant="8" id="dRx-mc-aLa"/>
+                    <constraint firstItem="3gj-4e-nfK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="i88-pb-3Mx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblUserGender" destination="0CN-5N-m8X" id="gVo-hk-q2W"/>
+                <outlet property="lblUserName" destination="Snm-ga-7LY" id="MgG-pG-Jiw"/>
+                <outlet property="mainBGCell" destination="3gj-4e-nfK" id="eKj-QI-p10"/>
+                <outlet property="mapView" destination="ber-TQ-xaG" id="our-KA-9s4"/>
+                <outlet property="userImgView" destination="EPS-ft-r5f" id="C98-R8-bXn"/>
+            </connections>
+            <point key="canvasLocation" x="112.31884057971016" y="76.674107142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
